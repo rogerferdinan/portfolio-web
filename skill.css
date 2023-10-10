@@ -1,0 +1,12 @@
+.skill {
+    padding: 10%;
+}
+.skill > * {
+    width: 80%;
+}
+
+.skill-list {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}

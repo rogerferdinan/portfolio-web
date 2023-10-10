@@ -1,0 +1,8 @@
+.about {
+    padding-left: 10%;
+    gap: 48px;
+}
+
+.about > * {
+    width: 80%;
+}
