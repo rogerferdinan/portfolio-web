@@ -1,0 +1,16 @@
+.project-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    width: 100%;
+    height: 100%;
+    row-gap: 12px;
+    justify-content: space-evenly;
+}
+
+.project-content {
+    display: flex;
+    background-color: gray;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: flex-end;
+}

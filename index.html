@@ -4,47 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roger Ferdinan</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="skill.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/skill.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/project.css">
+    <script src="assets/js/index.js"></script>
 </head>
 <body>
-    <div class="about section">
+    <div class="header">
+        <img src="assets/img/figma.png" class="header-logo">
+        <div class="header-item">
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="about section" id="about">
         <div>
-            <h2 class="blue">HELLO, MY NAME IS</h2>
+            <h2 class="blue">HELLO, I AM</h2>
             <h1 class="blue">ROGER FERDINAN</h1>
         </div>
-        <h2>an aspire professional driven by a passion to craft top-notch software solutions</h2>
-        <h3>with a robust foundation in computer science. I am prepared to craft cutting-edge and highly efficient software solutions. My aspiration is to make a meaningful and lasting contribution to society.</h3>
+        <h2>AN ASPIRING SOFTWARE ENGINEER DRIVEN BY A PASSION TO CRAFT TOP-NOTCH SOFTWARE SOLUTIONS</h2>
+        <h3>WITH A ROBUST FOUNDATION IN COMPUTER SCIENCE. I AM PREPARED TO CRAFT CUTTING-EDGE SOFTWARE. I AM ASPIRED TO MAKE A MEANINGFUL AND LASTING CONTRIBUTION TO SOCIETY</h3>
     </div>
-    <div class="skill section">
-        <h1>Skills</h1>
+    <div class="skill section" id="skill">
+        <h2>Skills</h2>
         <div class="skill-container">
-            <div>
+            <div class="skill-content">
                 <img src="assets/img/python.png">
                 <div>Python</div>
             </div>
             
-            <div>
+            <div class="skill-content">
                 <img src="assets/img/tensorflow.png">
                 <div>Tensorflow</div>
             </div>
-            <div>Node JS</div>
-            <div>MySQL</div>
-            <div>Kotlin Android</div>
-            <div>Jetpack Compose</div>
-            <div>Figma</div>
+            
+            <div class="skill-content">
+                <img src="assets/img/nodejs.png">
+                <div>Node JS</div>
+            </div>
+
+            <div class="skill-content">
+                <img src="assets/img/mysql.png">
+                <div>MySQL</div>
+            </div>
+            
+            <div class="skill-content">
+                <img src="assets/img/kotlin-android.png">
+                <div>Kotlin Android</div>
+            </div>
+            
+            <div class="skill-content">
+                <img src="assets/img/jetpack-compose.png">
+                <div>Jetpack Compose</div>
+            </div>
+            
+            <div class="skill-content">
+                <img src="assets/img/figma.png">
+                <div>Figma</div>
+            </div>
+            
         </div>
     </div>
-    <div class="experience section">
-        <h1>Experience</h1>
-        <div>Asia-Jakarta Regional Contest Finalist</div>
-        <div>Binus Mentor 2022.1</div>
-        <div>Binus Mentor 2022.2</div>
-        <div>Binus Mentor 2023.1</div>
+    <div class="experience section" id="experiences">
+        <h2>Experiences</h2>
+        <div class="experience-container">
+            <div class="experience-content">
+                <div class="experience-name">Mentor of Binus Mentorship Program 2022.1</div>
+                <div class="experience-year">Oct 2022 - Jan 2023</div>
+            </div>
+            <div class="experience-content">
+                <div class="experience-name">Asia-Jakarta Regional Contest Finalist</div>
+                <div class="experience-year">Nov 2022</div>
+            </div>
+            <div class="experience-content">
+                <div class="experience-name">Mentor of Binus Mentorship Program 2022.2</div>
+                <div class="experience-year">Feb 2023 - June 2023</div>
+            </div>
+            <div class="experience-content">
+                <div class="experience-name">Mentor of Binus Mentorship Program 2023.1</div>
+                <div class="experience-year">Oct 2023 - current</div>
+            </div>
+        </div>
     </div>
-    <!-- <div class="contact section">
-        <div></div>
-    </div> -->
+    <div class="project section" id="projects">
+        <h2>Project</h2>
+        <div class="project-container">
+            <div class="project-content">Company Profile Web Design</div>
+            <div class="project-content">uCharging - Reservation System for Electric Car Charging Station</div>
+            <div class="project-content">Weather Mobile App</div>
+            <div class="project-content">EmoSense - Interactive Mobile App</div>
+        </div>
+    </div>
+    <div class="contact section" id="contact">
+        <h2>Contact</h2>
+    </div>
 </body>
 </html>
