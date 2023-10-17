@@ -1,37 +1,50 @@
+@font-face {
+    font-family: Inter;
+    src: url("/assets/font/Inter.ttf");
+}
 * {
     margin: 0;
     padding: 0;
     font-family: "Inter";
+    font-weight: bold;
+}
+
+body {
+    background-color: #dddddd;
 }
 
 .header {
     display: flex;
     align-items: center;
     background-color: #dddddd;
-    position: sticky;
+    opacity: .96;
     flex-direction: row;
     justify-content: space-between;
-    width: cal(100% - 24px);
-    padding: 24px 48px;
+    width: 100%;
+    padding: 0 64px;
+    height: 10vh;
+    position: fixed;
     top: 0;
     z-index: 2;
 }
 .header-logo {
-    height: 40px;
-    width: 40px;
+    opacity: 1;
+    height: 32px;
+    width: auto;
 }
 .header-item {
     display: flex;
     flex-direction: row;
-    width: 40%;
     justify-content: space-between;
+    width: 70%;
+    opacity: 1;
 }
 .header-item a {
     text-decoration: none;
     color: black;
 }
+
 .section {
-    background-color: #dddddd;
     height: 100vh;
     padding: 0px 5%;
     display: flex;
@@ -41,17 +54,14 @@
 
 h1 {
     font-size: 128px;
-    font-weight: bolder;
 }
 
 h2 {
     font-size: 40px;
-    font-weight: bold;
 }
 
 h3 {
     font-size: 24px;
-    font-weight: bold;
 }
 
 .blue {
