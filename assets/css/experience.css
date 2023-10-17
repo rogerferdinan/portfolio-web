@@ -1,10 +1,12 @@
 .experience-container {
     position: relative;
     display: flex;
-    height: 400px;
+    min-height: 600px;
+    height: auto;
     margin: auto 0px;
     justify-content: space-between;
 }
+
 .experience-container::after {
     content: "";
     position: absolute;
@@ -20,7 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100px;
+    height: 120px;
     width: 400px;
     padding: 12px;
     border: 2px solid black;
@@ -52,9 +54,9 @@
 .experience-content::before {
     content: "";
     position: absolute;
-    left: calc(50% - 50px);
+    left: calc(50% - 120px);
     border: medium solid black;
-    border-width: 50px;
+    border-width: 120px;
 }
 .experience-content:nth-child(even)::before {
     border-color: #325C80 transparent transparent transparent;
@@ -76,12 +78,40 @@
     z-index: 1;
 }
 .experience-content:nth-child(even)::after {
-    top: calc(150% - 4px);
+    top: calc(200% - 4px);
 }
 .experience-content:nth-child(odd)::after {
-    bottom: calc(150% - 4px);
+    bottom: calc(200% - 8px);
 }
 
 .experience-name {
     font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .experience-content {
+        height: auto;
+        width: 160px;
+    }
+
+    .experience-content:nth-child(even) {
+        align-self: flex-end;
+    }
+    .experience-container::after {
+        height: 100%;
+        width: 4px;
+        top: 0;
+    }
+
+    .experience-content::before {
+        display: none;
+    }
+
+    .experience-content::after {
+        display: none;
+    }
 }

@@ -61,3 +61,9 @@ img {
         transform: translateX(0%);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .skill-container {
+        grid-template-columns: auto;
+    }   
+}
