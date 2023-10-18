@@ -13,6 +13,11 @@ body {
     background-color: #dddddd;
 }
 
+img {
+    height: auto;
+    width: auto;
+}
+
 .header {
     display: flex;
     align-items: center;

@@ -1,7 +1,7 @@
 .experience-container {
     position: relative;
     display: flex;
-    min-height: 600px;
+    min-height: 400px;
     height: auto;
     margin: auto 0px;
     justify-content: space-between;
@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 120px;
-    width: 400px;
+    min-width: 300px;
     padding: 12px;
     border: 2px solid black;
     visibility: hidden;
@@ -54,9 +54,9 @@
 .experience-content::before {
     content: "";
     position: absolute;
-    left: calc(50% - 120px);
+    left: calc(50% - 160px);
     border: medium solid black;
-    border-width: 120px;
+    border-width: 32px 160px;
 }
 .experience-content:nth-child(even)::before {
     border-color: #325C80 transparent transparent transparent;
@@ -78,10 +78,10 @@
     z-index: 1;
 }
 .experience-content:nth-child(even)::after {
-    top: calc(200% - 4px);
+    top: calc(130% - 4px);
 }
 .experience-content:nth-child(odd)::after {
-    bottom: calc(200% - 8px);
+    bottom: calc(128% - 4px);
 }
 
 .experience-name {
@@ -93,10 +93,10 @@
         flex-direction: column;
     }
 
-    .experience-content {
+    /* .experience-content {
         height: auto;
         width: 160px;
-    }
+    } */
 
     .experience-content:nth-child(even) {
         align-self: flex-end;

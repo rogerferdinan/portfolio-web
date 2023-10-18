@@ -1,0 +1,17 @@
+.contact-list {
+    height: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-content {
+    height: 48px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+.contact-content img {
+    height: 100%;
+    width: auto;
+}
