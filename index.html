@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="assets/css/project.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/header_observer.js"></script>
 </head>
 <body>
     <div class="header">
         <img src="assets/img/RF.png" class="header-logo">
         <div class="header-item">
-            <a href="#about">About</a>
-            <a href="#skill">Skills</a>
-            <a href="#experiences">Experiences</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="nav_item" id="about_nav">About</a>
+            <a href="#skill" class="nav_item" id="skill_nav">Skills</a>
+            <a href="#experiences" class="nav_item" id="exp_nav">Experiences</a>
+            <a href="#projects" class="nav_item" id="project_nav">Projects</a>
+            <a href="#contact" class="nav_item" id="contact_nav">Contact</a>
         </div>
     </div>
     <div class="about section" id="about">
@@ -95,11 +96,9 @@
     <div class="project section" id="projects">
         <h2>Project</h2>
         <div class="project-container">
-            <div class="project-content">EmoSense - Mobile Facial Emotion Detection</div>
-            <div class="project-content">uCharging - Reservation System for Electric Car Charging Station</div>
-            <div class="project-content">Weather Mobile App</div>
-            <div class="project-content">BookHub - Online Library Mockup</div>
-            <div class="project-content">Noka 3 - MOBA Web Mockup</div>
+            <div class="project-content emosense">EmoSense - Mobile Facial Emotion Detection</div>
+            <div class="project-content ucharging">uCharging - Reservation System for Electric Car Charging Station</div>
+            <div class="project-content noka-3">Noka 3 - MOBA Web Mockup</div>
         </div>
     </div>
     <div class="contact section" id="contact">

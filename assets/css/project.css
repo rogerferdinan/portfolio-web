@@ -10,10 +10,22 @@
 .project-content {
     display: flex;
     background-color: gray;
+    background-position: center;
+    box-shadow: inset 0 -64px 24px -24px rgba(0, 0, 0, 0.6);
     border-radius: 12px;
-    height: 200px;
+    height: 400px;
     justify-content: center;
     align-items: flex-end;
+    color: #eee;
+    padding-bottom: 10px;
+}
+
+.ucharging {
+    background-image: url("../img/project/ucharging-project.png");
+}
+
+.noka-3 {
+    background-image: url("../img/project/noka3-project.png");
 }
 
 @media only screen and (max-width: 600px) {

@@ -25,7 +25,7 @@ img {
     opacity: .96;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     padding: 0 64px;
     height: 10vh;
     position: fixed;
@@ -41,12 +41,11 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 50%;
     opacity: 1;
 }
 .header-item a {
     text-decoration: none;
-    color: black;
 }
 
 .section {
@@ -72,6 +71,10 @@ h3 {
 
 .blue {
     color: #325C80;
+}
+
+.black {
+    color: #111;
 }
 
 @media only screen and (max-width: 600px) {
