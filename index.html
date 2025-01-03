@@ -1,122 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roger Ferdinan</title>
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="assets/css/skill.css">
-    <link rel="stylesheet" href="assets/css/experience.css">
-    <link rel="stylesheet" href="assets/css/project.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/header_observer.js"></script>
-</head>
-<body>
-    <div class="header">
-        <img src="assets/img/RF.png" class="header-logo">
-        <div class="header-item">
-            <a href="#about" class="nav_item" id="about_nav">About</a>
-            <a href="#skill" class="nav_item" id="skill_nav">Skills</a>
-            <a href="#experiences" class="nav_item" id="exp_nav">Experiences</a>
-            <a href="#projects" class="nav_item" id="project_nav">Projects</a>
-            <a href="#contact" class="nav_item" id="contact_nav">Contact</a>
-        </div>
-    </div>
-    <div class="about section" id="about">
-        <div>
-            <h2 class="blue">GREETINGS, I AM</h2>
-            <h1 class="blue">ROGER FERDINAN</h1>
-        </div>
-        <h2>AN ASPIRING SOFTWARE ENGINEER DRIVEN BY A PASSION TO CRAFT TOP-NOTCH SOFTWARE SOLUTIONS</h2>
-        <h3>WITH A ROBUST FOUNDATION IN COMPUTER SCIENCE. I AM PREPARED TO CRAFT CUTTING-EDGE SOFTWARE. I AM ASPIRED TO MAKE A MEANINGFUL AND LASTING CONTRIBUTION TO SOCIETY</h3>
-    </div>
-    <div class="skill section" id="skill">
-        <h2>Skills</h2>
-        <div class="skill-container">
-            <div class="skill-content">
-                <img src="assets/img/python.png">
-                <div>Python</div>
-            </div>
-            
-            <div class="skill-content">
-                <img src="assets/img/tensorflow.png">
-                <div>Tensorflow</div>
-            </div>
-            
-            <div class="skill-content">
-                <img src="assets/img/nodejs.png">
-                <div>Node JS</div>
-            </div>
+<html lang="en" data-theme="light">
 
-            <div class="skill-content">
-                <img src="assets/img/mysql.png">
-                <div>MySQL</div>
-            </div>
-            
-            <div class="skill-content">
-                <img src="assets/img/kotlin-android.png">
-                <div>Kotlin Android</div>
-            </div>
-            
-            <div class="skill-content">
-                <img src="assets/img/jetpack-compose.png">
-                <div>Jetpack Compose</div>
-            </div>
-            
-            <div class="skill-content">
-                <img src="assets/img/figma.png">
-                <div>Figma</div>
-            </div>
-            
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal - Free Bulma template</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 1-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@1.0.2/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/personal.css">
+  <script async type="text/javascript" src="assets/js/bulma.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbar-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <div class="experience section" id="experiences">
-        <h2>Experiences</h2>
-        <div class="experience-container">
-            <div class="experience-content">
-                <div class="experience-name">Mentor of Binus Mentorship Program 2022.1</div>
-                <div class="experience-year">Oct 2022 - Jan 2023</div>
-            </div>
-            <div class="experience-content">
-                <div class="experience-name">Asia-Jakarta Regional Contest Finalist</div>
-                <div class="experience-year">Nov 2022</div>
-            </div>
-            <div class="experience-content">
-                <div class="experience-name">Mentor of Binus Mentorship Program 2022.2</div>
-                <div class="experience-year">Feb 2023 - June 2023</div>
-            </div>
-            <div class="experience-content">
-                <div class="experience-name">Mentor of Binus Mentorship Program 2023.1</div>
-                <div class="experience-year">Oct 2023 - current</div>
-            </div>
+
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#skills">
+          <span class="icon">
+            <i class="fas fa-star"></i>
+          </span>
+          <span>Skills</span>
+        </a>
+        <a class="navbar-item" href="#experiences">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Experience</span>
+        </a>
+        <!-- <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a> -->
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" href="#resume">
+              <span class="icon">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <span>View Resume</span>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="project section" id="projects">
-        <h2>Project</h2>
-        <div class="project-container">
-            <div class="project-content emosense">EmoSense - Mobile Facial Emotion Detection</div>
-            <div class="project-content ucharging">uCharging - Reservation System for Electric Car Charging Station</div>
-            <div class="project-content noka-3">Noka 3 - MOBA Web Mockup</div>
+  </nav>
+
+  <section class="hero is-fullheight is-fullheight-with-navbar" id="about">
+    <div class="hero-body">
+      <div class="container">Hello! I am
+        <h1 class="title is-1">
+          Roger Ferdinan
+        </h1>
+        <h2 class="subtitle is-3">
+          Developer, and tech enthusiast—specializing in Custom Enterprise Web Solutions
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-heading">
+      <h3 class="title is-2">Skills</h3>
+    </div>
+    <div class="container">
+      <div class="columns is-vcentered is-centered has-text-centered">
+        <div class="column is-narrow">
+          <figure class="image is-128x128">
+            <img src="assets/img/golang.png">
+          </figure>
+          <span>Go</span>
         </div>
-    </div>
-    <div class="contact section" id="contact">
-        <h2>Contact</h2>
-        <div class="contact-list">
-            <div class="contact-content">
-                <img src="assets/img/contact/linkedin.png" alt="">
-                <a href="https://www.linkedin.com/in/roger-ferdinan-8b640127a/">Roger Ferdinan</a>
-            </div>
-            <div class="contact-content">
-                <img src="assets/img/contact/instagram.png" alt="">
-                <a href="https://www.instagram.com/roger_ferdinan/">roger_ferdinan</a>
-            </div>
-            <div class="contact-content">
-                <img src="assets/img/contact/github.png" alt="">
-                <a href="https://github.com/rogerferdinan">rogerferdinan</a>
-            </div>
+        <div class="column is-narrow">
+          <figure class="image is-128x128">
+            <img src="assets/img/nodejs.png">
+          </figure>
+          <span>NodeJS</span>
         </div>
+        <div class="column is-narrow">
+          <figure class="image is-128x128">
+            <img src="assets/img/mendix.png">
+          </figure>
+          <span>Mendix</span>
+        </div>
+        <div class="column is-narrow">
+          <figure class="image is-128x128">
+            <img src="assets/img/python.png">
+          </figure>
+          <span>Python</span>
+        </div>
+        <div class="column is-narrow">
+          <figure class="image is-128x128">
+            <img src="assets/img/kotlin.png">
+          </figure>
+          <span>Kotlin</span>
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- TODO: experiences -->
+  <section class="section" id="experiences">
+    <div class="section-heading">
+      <h3 class="title is-2">Experiences</h3>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-4">Technical Consultant</h4>
+              <h6 class="subtitle is-6">PT Indonesia Global Solusindo</h6>
+              <div class="tags custom-tags">
+                <span class="tag is-light">Mendix</span>
+                <span class="tag is-light">Java</span>
+                <span class="tag is-light">Javascript</span>
+              </div>
+              <ul>
+                <li>Developed Billing Application using low-code platform—Mendix</li>
+                <li>Seamlessly Integrated New Applications into Existing Systems</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-4">Mentor of Binus SASC Mentoring Program</h4>
+              <h6 class="subtitle is-6">Bina Nusantara</h6>
+              <ul>
+                <li>Provided support and guidance mentees need to achieve their academic goals</li>
+                <li>Planned an individualized learning plan to match their unique learning style</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Resume -->
+  <section class="section is-fullheight columns is-centered is-vcentered has-text-centered" id="resume">
+    <div class="column is-narrow">
+      <h3 class="title is-2">Resume</h3>
+      <h4 class="subtitle is-5">Find Out More About Me</h4>
+      <a href="assets/cv-roger-ferdinan.pdf" class="button is-link is-medium" download>
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Download My Resume</span>
+      </a>
+    </div>
+
+  </section>
 </body>
+
 </html>
